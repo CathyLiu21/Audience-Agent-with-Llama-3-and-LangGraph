@@ -8,3 +8,7 @@ links to documents:
 https://www.adroll.com/blog/5-tools-to-learn-about-your-target-audience,
 https://online.hbs.edu/blog/post/target-audience-in-marketing, 
 https://www.adobe.com/express/learn/blog/target-audience
+
+## Snapshot of the App 
+
+### main interface: ![alt text](figures/audience_app.png)
