@@ -17,6 +17,7 @@ Backend: Flask, LangGraph, Llama 3, Chroma
 Frontend: Streamlit
 
 Agent Flowchat:
+
 ![alt text](figures/agent_workflow.png)
 
 
