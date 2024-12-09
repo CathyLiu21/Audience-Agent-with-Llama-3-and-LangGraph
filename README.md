@@ -5,4 +5,6 @@ Specific topics are strategies to find the target audience for your brands and w
 
 links to documents:
 
-https://www.adroll.com/blog/5-tools-to-learn-about-your-target-audience, https://online.hbs.edu/blog/post/target-audience-in-marketing, https://www.adobe.com/express/learn/blog/target-audience
+https://www.adroll.com/blog/5-tools-to-learn-about-your-target-audience,
+https://online.hbs.edu/blog/post/target-audience-in-marketing, 
+https://www.adobe.com/express/learn/blog/target-audience
