@@ -7,8 +7,9 @@ If the information are not avaliable in the current knowledge bank, the agent wi
 
 ## Snapshot of the App 
 
-### main interface: 
-![alt text](figures/audience_app.png)
+![alt text](figures/audience_app1.png)
+
+![alt text](figures/audience_app2.png)
 
 
 ## Tools
