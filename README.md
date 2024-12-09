@@ -11,4 +11,5 @@ https://www.adobe.com/express/learn/blog/target-audience
 
 ## Snapshot of the App 
 
-### main interface: ![alt text](figures/audience_app.png)
+### main interface: 
+![alt text](figures/audience_app.png)
