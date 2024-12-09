@@ -14,7 +14,7 @@ If the information are not avaliable in the current knowledge bank, the agent wi
 
 
 ## Tools
-Backend: Flask, LangGraph, Llama 3, Chroma 
+Backend: Flask, LangGraph, Llama 3, Chroma Vector DB, Groq API, Tavily API
 
 Frontend: Streamlit
 
