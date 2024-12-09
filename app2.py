@@ -57,6 +57,7 @@ embed_model = FastEmbedEmbeddings(model_name="BAAI/bge-large-en-v1.5")
 
 web_search_tool = TavilySearchResults(k=3)
 
+# build vector DB from files 
 #urls = [
 #"https://www.adroll.com/blog/5-tools-to-learn-about-your-target-audience",
 #"https://online.hbs.edu/blog/post/target-audience-in-marketing",
@@ -77,8 +78,10 @@ web_search_tool = TavilySearchResults(k=3)
 #    embedding=embed_model,
 #)
 #retriever = vectorstore.as_retriever()
+
+#retrieve directly from built vectore DB
 # Path to the saved vector store
-persist_directory = "/Users/mengyu/Downloads/aiops-week5/vectorDB1"  # Adjust the path as needed
+persist_directory = "~/vectorDB1"  # Adjust the path as needed
 # Load the existing vector store from the directory
 loaded_vectorstore = Chroma(persist_directory=persist_directory,embedding_function=embed_model)
 # Convert the loaded vectorstore to a retriever
@@ -87,7 +90,7 @@ retriever = loaded_vectorstore.as_retriever()
 print("Vectorstore loaded successfully!")
 
 
-
+####define roles for the agent
 prompt = PromptTemplate(
     template="""<|begin_of_text|><|start_header_id|>system<|end_header_id|> 
     You excel in directing user inquiries either to a vector store or a web search. 
@@ -421,42 +424,6 @@ workflow.add_conditional_edges(
 
 
 app = Flask(__name__)
-
-# Assuming your workflow setup (like workflow.compile()) is defined elsewhere
-# and you have a pre-configured app to run (like `workflow` object)
-
-#@app.route('/generate', methods=['POST'])
-#def generate_response():
-#    try:
-        # Extract input data from the JSON body
-#        data = request.get_json()
-#        question = data.get('question', '')
-
-#        if not question:
-#            return jsonify({'error': 'Question is required'}), 400
-
-        # Prepare the inputs for your workflow
-#        inputs = {"question": question}
-        
-        # Run the workflow
-#        output_value = None
-#        app = workflow.compile()
-#        results = []
-#        for output in app.stream(inputs):
-#            for key, value in output.items():
-#                pprint(f"Finished running: {key}:")
-#                results.append({key: value}) 
- #           output_value = value.get("generation", "No generation found")
-
- #       if output_value:
- #           return jsonify({'results': results,'response': output_value}), 200
- #       else:
- #           return jsonify({'error': 'No generation found'}), 500
-
- #   except Exception as e:
-#        # Handle the error gracefully
-#        print("An error occurred:", e)
-#        return jsonify({'error': 'An internal error occurred'}), 500
 
 
 @app.route('/generate', methods=['POST'])
