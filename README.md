@@ -13,7 +13,9 @@ If the information are not avaliable in the current knowledge bank, the agent wi
 
 ## Tools
 Backend: Flask, LangGraph, Llama 3, Chroma 
+
 Frontend: Streamlit
+
 Agent Flowchat:
 
 
